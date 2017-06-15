@@ -1,24 +1,43 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# lunch-roullete-api
 
-Things you may want to cover:
+Data Model
 
-* Ruby version
+Restaurants
+  - Names
+  - location
+  - image
 
-* System dependencies
+Reviews
+  - flatiron_email
+  - authorization_code
+  - restaurant_id
+  - Stars: [1-5]
+  - cost
+    - OTT
+    - Average
+    - Pocket Change
+  - bodily_impact
+    - Like I took a yoga class
 
-* Configuration
+    - Red Alert
+  - recommended_for
+    - project week
+    - pre-feelings Friday
+    - pre-afternoon-lecture
+    - Javascript Module (!@%#!)
+    - Post Code Challenge
 
-* Database creation
+Routes
+  Restaurants
+  - Index
+  - Show
+  - Create
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  Reviews
+  - Index
+  - Show
+  - Create
+  - Update
+  - Delete

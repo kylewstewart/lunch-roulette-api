@@ -4,7 +4,7 @@
 
 Data Model
 
-Restaurants
+Places
   - Names
   - location
   - image
@@ -12,7 +12,7 @@ Restaurants
 Reviews
   - flatiron_email
   - authorization_code
-  - restaurant_id
+  - place_id
   - Stars: [1-5]
   - cost
     - OTT
@@ -30,7 +30,7 @@ Reviews
     - Post Code Challenge
 
 Routes
-  Restaurants
+  Place
   - Index
   - Show
   - Create

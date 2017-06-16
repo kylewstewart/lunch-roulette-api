@@ -1,7 +1,7 @@
 class Api::V1::PlacesController < ApplicationController
 
   def index
-    places = Places.all
+    places = Place.all
     render json: places
   end
 

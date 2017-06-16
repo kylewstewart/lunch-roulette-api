@@ -7,6 +7,7 @@ class Api::V1::PlacesController < ApplicationController
 
   def create
     filters = params['filters']
+    
     reviews = Review.where(cost: filters["cost"], bodily_impact: filters['bodily_impact'], recommended_for: filters['recommended_for'])
     places = reviews.map{|review| Place.find(review.place_id)}.uniq.shuffle
     data = places.map do |place|

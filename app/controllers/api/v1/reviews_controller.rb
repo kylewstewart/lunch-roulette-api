@@ -7,8 +7,15 @@ class Api::V1::ReviewsController < ApplicationController
   end
 
   def create
-    review = Review.create(review_params)
-    render json: review
+    review = Review.new(review_params)
+    user = User.where(email: "#{review.email}@flatironschool.com").first
+    if user.authorization_code == review.authorization_code
+      review.save
+      render json: review
+    else
+      render json: {errors: "Authorization Code Did Not Match"}
+    end
+    user.destroy
   end
 
 

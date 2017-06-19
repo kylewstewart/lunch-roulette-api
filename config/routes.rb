@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   namespace :api do
   namespace :v1 do
-    get '/users/', to: 'users#authorization_code'
+    post '/users/', to: 'users#authorization_code'
     resources :places do
       resources :reviews
     end

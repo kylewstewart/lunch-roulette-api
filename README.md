@@ -1,43 +1,15 @@
-# README
+# Lunch Roulette
 
-# lunch-roullete-api
+---
+###
+_Making lunch choices easy for our Flatiron school mates._
 
-Data Model
 
-Places
-  - Names
-  - location
-  - image
+When you don't want to decide where to eat, use Lunch Roulette for suggestions. We have created filters catered specifically to bootcampers' needs and preferences. Preferences and ratings for restaurants are exclusively limited to Flatiron students only with @flatiron email domains.
 
-Reviews
-  - flatiron_email
-  - authorization_code
-  - place_id
-  - Stars: [1-5]
-  - cost
-    - OTT
-    - Average
-    - Pocket Change
-  - bodily_impact
-    - Like I took a yoga class
+----
+##Technology
 
-    - Red Alert
-  - recommended_for
-    - project week
-    - pre-feelings Friday
-    - pre-afternoon-lecture
-    - Javascript Module (!@%#!)
-    - Post Code Challenge
-
-Routes
-  Place
-  - Index
-  - Show
-  - Create
-
-  Reviews
-  - Index
-  - Show
-  - Create
-  - Update
-  - Delete
+- ReactJS
+- Ruby on Rails
+- Semantic UI React
